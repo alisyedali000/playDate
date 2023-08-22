@@ -22,7 +22,7 @@ struct GroupSettingUI: View {
                 } nextButtonAction: {
                     
                 }
-           
+                
                 VStack{
                     Image("Avatars")
                         .frame(width: 78, height: 78)
@@ -53,8 +53,8 @@ struct GroupSettingUI: View {
                         }.padding()
                     }.padding(.horizontal)
                     
-             
-                Spacer()
+                    
+                    Spacer()
                 }
             }
         }

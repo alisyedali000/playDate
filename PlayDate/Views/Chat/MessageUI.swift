@@ -15,35 +15,38 @@ struct MessageUI: View {
 
     
     var body: some View {
-        VStack{
-            MessageViewTopbar(title: "Killan James", backButtonAction: {
-                self.presentationMode.wrappedValue.dismiss()
-            }) {
-               
-            }
-            
-            ScrollView{
-            SentMessageBubble(messageText: "Hi Misel, your welcome nice to meet you too")
-            ReceivedMessageBubble(messageText: "Your dog is absolute beauty, can you send me pic?")
-            }
-            
-  
-            
-            
+        NavigationView{
             VStack{
-                HStack{
+                MessageViewTopbar(title: "Killan James", backButtonAction: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
                     
-                    Text("Misellia is typing...")
-                        .foregroundColor(.newCustomcolor)
-                        .font(.system(size: 12))
-                    Spacer()
-                }.padding(.leading)
-                CustomTextfield(placeholder: "Send Message", image: "galleryicon", text: $messageText).padding(.horizontal)
+                }
+                
+                ScrollView{
+                    SentMessageBubble(messageText: "Hi Misel, your welcome nice to meet you too")
+                    ReceivedMessageBubble(messageText: "Your dog is absolute beauty, can you send me pic?")
+                }
+                
+                
+                
+                
+                
+                VStack{
+                    HStack{
+                        
+                        Text("Misellia is typing...")
+                            .foregroundColor(.newCustomcolor)
+                            .font(.system(size: 12))
+                        Spacer()
+                    }.padding(.leading)
+                    CustomTextfield(placeholder: "Send Message", image: "galleryicon", text: $messageText).padding(.horizontal)
+                    
+                }
+                
                 
             }
-            
-         
-        }
+        }.navigationBarHidden(true)
     }
 }
 

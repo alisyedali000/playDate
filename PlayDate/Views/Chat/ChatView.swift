@@ -32,14 +32,17 @@ struct ChatView: View {
                 
              
                 
-                ScrollView{
-                    VStack(spacing:22){
-                      
-                        ForEach(chatArray){ userchat in
-                            ChatCell(userchat:userchat)
+                ScrollView {
+                    VStack(spacing: 22) {
+                        ForEach(chatArray) { userchat in
+                            NavigationLink(destination: MessageUI(messageText: userchat.chat)) {
+                                ChatCell(userchat: userchat)
+                            }
                         }
-                    }.padding()
+                    }
+                    .padding()
                 }
+
                 NavigationLink(destination: GroupChatView()) {
                     creategroupIcon()
                         .padding(.trailing, 20)
