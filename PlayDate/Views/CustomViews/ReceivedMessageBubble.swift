@@ -11,7 +11,7 @@ struct ReceivedMessageBubble:View{
     var messageText = ""
     var body: some View{
         VStack {
-            HStack{
+            HStack(alignment: .top){
                 
                Text(messageText)
                     .padding(15)
@@ -20,9 +20,9 @@ struct ReceivedMessageBubble:View{
                     .cornerRadius(24)
                     .font(.system(size: 15))
                     .foregroundColor(Color(.white))
-                    .frame(maxWidth: 280)
+                    .padding(.trailing,50)
                 Spacer()
-            }.padding(.trailing)
+            }.padding(.horizontal)
             HStack{
                 
                 Text("8:30")
@@ -36,6 +36,6 @@ struct ReceivedMessageBubble:View{
 }
 struct ReceivedMessageBubble_Previews: PreviewProvider {
     static var previews: some View {
-        ReceivedMessageBubble()
+        ReceivedMessageBubble(messageText: "Hello")
     }
 }

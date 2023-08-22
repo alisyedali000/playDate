@@ -86,10 +86,15 @@ extension AddPetViewModel: NetworkManagerService{
         }
     }
     func userPetsAPI() async{
-        self.showLoader = true
+        DispatchQueue.main.async {
+            self.showLoader = true
+        }
+        
         let endPoint: AddPetEndPoints = .userPets
         let request = await sendRequest(endpoint: endPoint, responseModel: GenericResponseModel<[AddPetModel]>.self)
-        self.showLoader = false
+        DispatchQueue.main.async {
+            self.showLoader = false
+        }
         switch request {
         case .success(let data):
             debugPrint(data.message ?? "")

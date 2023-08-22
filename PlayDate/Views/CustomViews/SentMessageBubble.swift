@@ -19,7 +19,8 @@ struct SentMessageBubble: View {
                     .cornerRadius(24)
                     .font(.system(size: 15))
                     .foregroundColor(Color(.white))
-                    .frame(maxWidth: 280)
+                    .padding(.leading, 50)
+                
             }.padding(.horizontal)
             HStack{
                 Spacer()
@@ -33,6 +34,6 @@ struct SentMessageBubble: View {
 
 struct SentMessageBubble_Previews: PreviewProvider {
     static var previews: some View {
-        SentMessageBubble()
+        SentMessageBubble(messageText: "Hello")
     }
 }

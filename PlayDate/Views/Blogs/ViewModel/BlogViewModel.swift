@@ -15,10 +15,14 @@ class BlogViewModel: ObservableObject {
 
 extension BlogViewModel: NetworkManagerService {
     func blogAPI(categoryName: String) async {
-        self.showLoader = true
+        DispatchQueue.main.async{
+            self.showLoader = true
+        }
         let endPoint : BlogEndPoints = .blog( category_name: categoryName)
         let request = await sendRequest(endpoint: endPoint, responseModel: GenericResponseModel<[BlogDetails]>.self)
-        self.showLoader = false
+        DispatchQueue.main.async{
+            self.showLoader = false
+        }
         switch request {
             
         case .success(let data):

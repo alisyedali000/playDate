@@ -27,22 +27,36 @@ class HomeViewModel: ObservableObject {
 }
 extension HomeViewModel: NetworkManagerService {
     func swipeCardAPI(age: String, breed: String, interests: [String]) async {
-        self.showLoader = true
+        DispatchQueue.main.async {
+            self.showLoader = true
+        }
         let endPoint: HomeEndPoints = .homeSwipeCard(age: age, breed: breed, interests: interest)
         let request = await sendRequest(endpoint: endPoint, responseModel: GenericResponseModel<[userModel]>.self)
-        self.showLoader = false
+       
         switch request {
-            
-            
+
+
         case .success(let data):
-            debugPrint(data.message ?? "")
-            fetched_users = data.data ?? []
+            DispatchQueue.main.async {
+                debugPrint(data.message ?? "")
+                self.fetched_users = data.data ?? []
+                self.showLoader = false
+            }
             
+
         case .failure(let error):
-            debugPrint(error.customMessage)
+            DispatchQueue.main.async {
+                debugPrint(error.customMessage)
+                self.showLoader = false
+            }
+            
         }
     }
 }
+
+
+
+
 
 
 

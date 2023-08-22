@@ -26,6 +26,7 @@ struct MessageUI: View {
             SentMessageBubble(messageText: "Hi Misel, your welcome nice to meet you too")
             ReceivedMessageBubble(messageText: "Your dog is absolute beauty, can you send me pic?")
             }
+            
   
             
             
