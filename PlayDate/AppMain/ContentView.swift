@@ -8,20 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-  
     @State private var isAuthenticated = UserDefaultManager.IsAuthenticated()
+    @EnvironmentObject var google: GoogleAuthentication
     
     var body: some View {
-        
         Group {
-            /// if user is already logged in
-            if isAuthenticated {
-                
+            switch google.state {
+            case .signedIn:
                 TabBarControllerView()
                     .hideNavigationBar
-            } else {
-                /// else if user is not logged in
-                SplashView()
+                
+            case .signedOut:
+                if isAuthenticated {
+                    HomeView() 
+                } else {
+                    SplashView()
+                }
             }
         }
         .onReceive(UserDefaultManager.Authenticated) { newValue in

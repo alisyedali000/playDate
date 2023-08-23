@@ -2,35 +2,48 @@
 //  PlayDateApp.swift
 //  PlayDate
 //
-//  Created by عادل🫥 on 05/04/2023.
+//  Created by Ali Syed.
 //
 
+
+
+
+import Firebase
+import GoogleSignIn
 import SwiftUI
-import SwiftUI
-import FirebaseCore
 
 
-class AppDelegate: NSObject, UIApplicationDelegate {
-  func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
-
-    return true
-  }
-}
 
 
 @main
-struct PlayDateApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+struct PlayDate: App {
+    
+    
+    @StateObject var google = GoogleAuthentication()
+    
+    init() {
+        setupAuthentication()
+    }
+    
+    
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
+            NavigationView{
                 ContentView()
-            } 
+            }
+            .environmentObject(google)
         }
     }
+    
 }
+
+
+extension PlayDate {
+  private func setupAuthentication() {
+    FirebaseApp.configure()
+  }
+}
+
 
 
 

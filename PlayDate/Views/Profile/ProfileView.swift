@@ -12,6 +12,7 @@ struct ProfileView: View {
     
     @State private var moveToAddPets = false
     @Environment (\.dismiss) var dismiss
+    @EnvironmentObject var google : GoogleAuthentication
     @StateObject var profileVM = AddPetViewModel()
     @StateObject var deleteVM = EditPetViewModel()
     @State private var showalert = false
@@ -121,6 +122,7 @@ extension ProfileView {
             Button {
                 DispatchQueue.main.async {
                     UserDefaultManager.shared.removeUser()
+                    google.signOut()
                 }
                 
             } label: {

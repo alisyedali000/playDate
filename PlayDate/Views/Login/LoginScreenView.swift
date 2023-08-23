@@ -6,14 +6,21 @@
 //
 
 import SwiftUI
+import Firebase
+import GoogleSignIn
+import GoogleSignInSwift
+
+
 
 struct LoginScreenView: View {
+    @EnvironmentObject var google: GoogleAuthentication
+    
     @Environment (\.dismiss) var dismiss
     @StateObject var loginVM =  LoginViewModel()
     @FocusState var isFocused: Bool
     @State private var isActive = false
-   
-   
+    
+    
     
     var body: some View {
         
@@ -21,15 +28,15 @@ struct LoginScreenView: View {
             loadView()
             LoaderView(isLoading: $loginVM.showLoader)
         }
-            .alert("PlayDate Error", isPresented: $loginVM.showError) {
-                
-            } message: {
-                Text(loginVM.errorMessage)
-            }
-            .onReceive(RootController.auth) { newValue in
-                print(newValue)
-                isActive = newValue
-            }
+        .alert("PlayDate Error", isPresented: $loginVM.showError) {
+            
+        } message: {
+            Text(loginVM.errorMessage)
+        }
+        .onReceive(RootController.auth) { newValue in
+            print(newValue)
+            isActive = newValue
+        }
         
         
     }
@@ -141,25 +148,43 @@ extension LoginScreenView{
                 
                 
             }
-            HStack{
+            HStack(spacing: 30){
                 
-                ZStack {
-                    Circle()
-                        .frame(width: 35, height: 35)
-                        .foregroundColor(.white)
-                        .shadow(radius: 2)
+                ZStack{
+                    Button{
+//                        google.signIn()
+                    }label: {
+                        
+                        Image(AppImages.appleLogo.rawValue)
+                            .background(
+                                Circle()
+                                    .frame(width:35,height:35)
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 2)
+                            )
+                    }
                     
-                    Image(AppImages.appleLogo.rawValue)
                     
                 }
                 
                 ZStack{
-                    Circle()
-                        .frame(width:35,height:35)
-                        .foregroundColor(.white)
-                        .shadow(radius: 2)
-                    Image(AppImages.googlelogo.rawValue)
+                    Button{
+                        google.signIn()
+                    }label: {
+                        
+                        Image(AppImages.googlelogo.rawValue)
+                            .background(
+                                Circle()
+                                    .frame(width:35,height:35)
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 2)
+                            )
+                    }
+                    
+                    
                 }
+                
+                
                 
                 
             }.padding()
@@ -168,7 +193,7 @@ extension LoginScreenView{
         
     }
     func ForgotText()-> some View{
-
+        
         HStack{
             Spacer()
             Button(action: {
@@ -184,9 +209,9 @@ extension LoginScreenView{
         .background(
             NavigationLink("", destination: ForgotPasswordView(), isActive: $isActive)
             
-            .hidden()
+                .hidden()
         )
-
+        
         
     }
 }
@@ -204,4 +229,16 @@ struct LoginScreenView_Previews: PreviewProvider {
         
     }
     
+}
+
+
+struct GoogleSignInButton: View {
+    var body: some View {
+        // Implement your custom Google Sign-In button here
+        Text("Google Sign-In")
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+    }
 }
