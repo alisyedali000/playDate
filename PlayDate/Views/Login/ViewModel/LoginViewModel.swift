@@ -12,7 +12,7 @@ class LoginViewModel: ObservableObject{
     @Published var text = ""
     @Published var errorMessage = ""
     @Published var showError = false
-  @Published  var moveToNext = false
+    @Published  var moveToNext = false
     @Published var showLoader = false
 }
 extension LoginViewModel {
@@ -44,19 +44,26 @@ extension LoginViewModel : NetworkManagerService {
             
         case .success(let data):
             
-            debugPrint(data.message ?? "")
-            debugPrint(data.status ?? "")
-            debugPrint(data.data)
-            
-            UserDefaultManager.shared.set(user: data.data ?? User())
-            UserDefaultManager.Authenticated.send(true)
-            self.moveToNext.toggle()
-            
+            if data.status == true{
+                debugPrint(data.message ?? "")
+                debugPrint(data.status ?? "")
+                debugPrint(data.data)
+                
+                UserDefaultManager.shared.set(user: data.data ?? User())
+                UserDefaultManager.Authenticated.send(true)
+                
+                self.moveToNext.toggle()
+                
+            }else{
+                
+                showError(message: "Invalid Username or Password")
+            }
         case .failure(let error):
             debugPrint(error.customMessage)
+            
         }
     }
     
-   
+    
 }
 
