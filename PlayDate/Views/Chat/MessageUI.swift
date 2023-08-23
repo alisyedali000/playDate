@@ -11,9 +11,7 @@ struct MessageUI: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var messageText : String
-    
 
-    
     var body: some View {
         NavigationView{
             VStack{
@@ -59,4 +57,3 @@ struct MessageUI_Previews: PreviewProvider {
         MessageUI(messageText: "")
     }
 }
-

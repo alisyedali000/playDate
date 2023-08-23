@@ -206,7 +206,7 @@ extension EditPetDetails{
                 .font(.custom(DMSans.regular.rawValue, size: 13))
             
             Toggle("", isOn: $editVM.isVaccinated)
-                .toggleStyle(SwitchToggleStyle(tint: .newBTColor))
+                .toggleStyle(SwitchToggleStyle(tint: .newCustomcolor))
         }
     }
  

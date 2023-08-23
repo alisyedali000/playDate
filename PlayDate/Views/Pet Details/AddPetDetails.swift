@@ -164,7 +164,7 @@ extension AddPetDetails{
                 .font(.custom(DMSans.regular.rawValue, size: 13))
             
             Toggle("", isOn: $addVM.isVaccinated)
-                .toggleStyle(SwitchToggleStyle(tint: .newBTColor))
+                .toggleStyle(SwitchToggleStyle(tint: .newCustomcolor))
         }
     }
     

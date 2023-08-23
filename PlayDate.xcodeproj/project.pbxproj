@@ -18,6 +18,13 @@
 		0116F9922A94C5A000E7BC8C /* CustomTopbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116F9912A94C5A000E7BC8C /* CustomTopbar.swift */; };
 		0116F9942A94C64400E7BC8C /* NewGroupBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116F9932A94C64400E7BC8C /* NewGroupBottomSheet.swift */; };
 		0116F9962A94C84900E7BC8C /* GroupSettingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116F9952A94C84900E7BC8C /* GroupSettingUI.swift */; };
+		01C191292A9610B700850392 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01C191282A9610B700850392 /* GoogleService-Info.plist */; };
+		01C1912C2A96205400850392 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 01C1912B2A96205400850392 /* FirebaseAnalytics */; };
+		01C1912E2A96205400850392 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 01C1912D2A96205400850392 /* FirebaseAuth */; };
+		01C191302A96205400850392 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 01C1912F2A96205400850392 /* FirebaseDatabase */; };
+		01C191322A96205400850392 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 01C191312A96205400850392 /* FirebaseFirestore */; };
+		01C191352A96222F00850392 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 01C191342A96222F00850392 /* GoogleSignIn */; };
+		01C191372A96222F00850392 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 01C191362A96222F00850392 /* GoogleSignInSwift */; };
 		8D0DBFC929E01FDD00ABACFB /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0DBFC829E01FDD00ABACFB /* ResetPasswordView.swift */; };
 		8D0DBFCB29E02A5000ABACFB /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0DBFCA29E02A5000ABACFB /* OTPTextField.swift */; };
 		8D14D77B2A14984100AE7C50 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D14D77A2A14984100AE7C50 /* ApiManager.swift */; };
@@ -126,6 +133,7 @@
 		0116F9912A94C5A000E7BC8C /* CustomTopbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTopbar.swift; sourceTree = "<group>"; };
 		0116F9932A94C64400E7BC8C /* NewGroupBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupBottomSheet.swift; sourceTree = "<group>"; };
 		0116F9952A94C84900E7BC8C /* GroupSettingUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSettingUI.swift; sourceTree = "<group>"; };
+		01C191282A9610B700850392 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D0DBFC829E01FDD00ABACFB /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		8D0DBFCA29E02A5000ABACFB /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 		8D14D77A2A14984100AE7C50 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -228,7 +236,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C1912C2A96205400850392 /* FirebaseAnalytics in Frameworks */,
+				01C1912E2A96205400850392 /* FirebaseAuth in Frameworks */,
+				01C191372A96222F00850392 /* GoogleSignInSwift in Frameworks */,
+				01C191302A96205400850392 /* FirebaseDatabase in Frameworks */,
+				01C191322A96205400850392 /* FirebaseFirestore in Frameworks */,
 				8D6359F52A1C833700E8CC63 /* SDWebImageSwiftUI in Frameworks */,
+				01C191352A96222F00850392 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				8D83B6BA29DD91C000909EF3 /* Info.plist */,
+				01C191282A9610B700850392 /* GoogleService-Info.plist */,
 				8D14D7782A1497EB00AE7C50 /* Manager */,
 				8D937D2729DE939C002903F9 /* Extensions */,
 				8D83B67129DD5D3D00909EF3 /* Font */,
@@ -733,6 +748,12 @@
 			name = PlayDate;
 			packageProductDependencies = (
 				8D6359F42A1C833700E8CC63 /* SDWebImageSwiftUI */,
+				01C1912B2A96205400850392 /* FirebaseAnalytics */,
+				01C1912D2A96205400850392 /* FirebaseAuth */,
+				01C1912F2A96205400850392 /* FirebaseDatabase */,
+				01C191312A96205400850392 /* FirebaseFirestore */,
+				01C191342A96222F00850392 /* GoogleSignIn */,
+				01C191362A96222F00850392 /* GoogleSignInSwift */,
 			);
 			productName = PlayDate;
 			productReference = 8D83B5EA29DD4BB100909EF3 /* PlayDate.app */;
@@ -764,6 +785,8 @@
 			mainGroup = 8D83B5E129DD4BB100909EF3;
 			packageReferences = (
 				8D6359F32A1C833700E8CC63 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				01C1912A2A96205300850392 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				01C191332A96222F00850392 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 8D83B5EB29DD4BB100909EF3 /* Products */;
 			projectDirPath = "";
@@ -784,6 +807,7 @@
 				010FD29F2A9348C900DE0141 /* DMSans-Bold.ttf in Resources */,
 				010FD2A32A9348D900DE0141 /* DMSans-Regular.ttf in Resources */,
 				8D83B5F229DD4BB400909EF3 /* Assets.xcassets in Resources */,
+				01C191292A9610B700850392 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1026,12 +1050,15 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlayDate/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "need camera access to change profile picture";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1059,12 +1086,15 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlayDate/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "need camera access to change profile picture";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1103,6 +1133,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		01C1912A2A96205300850392 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		01C191332A96222F00850392 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		8D6359F32A1C833700E8CC63 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
@@ -1114,6 +1160,36 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		01C1912B2A96205400850392 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01C1912A2A96205300850392 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		01C1912D2A96205400850392 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01C1912A2A96205300850392 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		01C1912F2A96205400850392 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01C1912A2A96205300850392 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		01C191312A96205400850392 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01C1912A2A96205300850392 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		01C191342A96222F00850392 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01C191332A96222F00850392 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		01C191362A96222F00850392 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01C191332A96222F00850392 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
 		8D6359F42A1C833700E8CC63 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8D6359F32A1C833700E8CC63 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;

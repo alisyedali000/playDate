@@ -152,7 +152,7 @@ extension ProfileView {
                     .foregroundColor(.newProfileWilliamColor)
                     .font(.custom(DMSans.regular.rawValue, size: 16))
                 Text("Shakes-appeare@gmail.com")
-                    .foregroundColor(.newDescription)
+                    .foregroundColor(.newAColor)
                     .font(.custom(DMSans.regular.rawValue, size: 12))
                 
             }

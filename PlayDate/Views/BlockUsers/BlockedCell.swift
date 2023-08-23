@@ -36,7 +36,7 @@ extension BlockedCell{
                     self.showalert.toggle()
                 }) {
                     Text(blockusers.unblock)
-                        .foregroundColor(.newBTColor)
+                        .foregroundColor(.newCustomcolor)
                         .font(.custom(DMSans.bold.rawValue, size: 14))
                 }
                 .alert(isPresented: self.$showalert) {
