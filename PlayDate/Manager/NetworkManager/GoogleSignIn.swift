@@ -1,3 +1,13 @@
+//
+//  GoogleSignIn.swift
+//  PlayDate
+//
+//  Created by Ali Syed on 24/08/2023.
+//
+
+
+
+
 import Firebase
 import GoogleSignIn
 import SwiftUI
@@ -6,7 +16,6 @@ import SwiftUI
 
 class GoogleAuthentication: ObservableObject {
 
-  
   enum SignInState {
     case signedIn
     case signedOut
@@ -16,7 +25,7 @@ class GoogleAuthentication: ObservableObject {
   @Published var state: SignInState = .signedOut
     
     func signIn() {
-        // 1
+ 
         if GIDSignIn.sharedInstance.hasPreviousSignIn() {
             GIDSignIn.sharedInstance.restorePreviousSignIn { [unowned self] user, error in
                 authenticateUser(for: user, with: error)
@@ -57,6 +66,9 @@ class GoogleAuthentication: ObservableObject {
           print(error.localizedDescription)
         } else {
           self.state = .signedIn
+//        UserDefaultManager.shared.set(user: data.data ?? User())
+        UserDefaultManager.Authenticated.send(true)
+            
         }
       }
     }
@@ -71,6 +83,7 @@ class GoogleAuthentication: ObservableObject {
         try Auth.auth().signOut()
         
         state = .signedOut
+//        UserDefaultManager.Authenticated.send(false)
       } catch {
         print(error.localizedDescription)
       }

@@ -14,7 +14,7 @@ import GoogleSignInSwift
 
 struct LoginScreenView: View {
     @EnvironmentObject var google: GoogleAuthentication
-    
+    @EnvironmentObject var apple : AppleSignIn
     @Environment (\.dismiss) var dismiss
     @StateObject var loginVM =  LoginViewModel()
     @FocusState var isFocused: Bool
@@ -95,9 +95,7 @@ extension LoginScreenView{
                 .frame(width:geo.size.width)
                 .frame(width:geo.size.width, height: geo.size.height * 1.7)
                 .frame(width: geo.size.width, height: geo.size.height * 1.4)
-            
-            
-            
+          
         }
         
         
@@ -152,7 +150,7 @@ extension LoginScreenView{
                 
                 ZStack{
                     Button{
-//                        google.signIn()
+                        apple.signIn()
                     }label: {
                         
                         Image(AppImages.appleLogo.rawValue)
@@ -220,12 +218,7 @@ struct LoginScreenView_Previews: PreviewProvider {
     static var previews: some View {
         
         LoginScreenView()
-            .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro Max"))
-            .previewDisplayName("iPhone 14 Pro Max")
-        
-        LoginScreenView()
-            .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
-            .previewDisplayName("iPhone SE (3rd generation)")
+       
         
     }
     

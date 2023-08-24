@@ -69,11 +69,6 @@ struct TabBarControllerView: View {
 struct TabBarControllerView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarControllerView()
-            .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro Max"))
-            .previewDisplayName("iPhone 14 Pro Max")
-        
-        TabBarControllerView()
-            .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
-            .previewDisplayName("iPhone SE (3rd generation)")
+    
     }
 }

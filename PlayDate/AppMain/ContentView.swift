@@ -10,20 +10,20 @@ import SwiftUI
 struct ContentView: View {
     @State private var isAuthenticated = UserDefaultManager.IsAuthenticated()
     @EnvironmentObject var google: GoogleAuthentication
+    @EnvironmentObject var apple: AppleSignIn
+    
+    var combinedAuthenticationState: Bool {
+        return google.state == .signedIn || apple.state == .signedIn
+    }
     
     var body: some View {
         Group {
-            switch google.state {
-            case .signedIn:
+            if combinedAuthenticationState || isAuthenticated{
                 TabBarControllerView()
                     .hideNavigationBar
-                
-            case .signedOut:
-                if isAuthenticated {
-                    HomeView() 
-                } else {
-                    SplashView()
-                }
+            
+            } else {
+                SplashView()
             }
         }
         .onReceive(UserDefaultManager.Authenticated) { newValue in
@@ -31,6 +31,8 @@ struct ContentView: View {
         }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

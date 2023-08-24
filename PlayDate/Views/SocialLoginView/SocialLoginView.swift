@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct SocialLoginView: View {
+    @EnvironmentObject var apple : AppleSignIn
+    @EnvironmentObject var google : GoogleAuthentication
+    
+    
     @State  var text = ""
     var body: some View {
         
@@ -96,9 +100,14 @@ extension SocialLoginView {
             VStack(spacing:15) {
                 
                 
-                socialLoginBtn(image: AppImages.appleLogo.rawValue, title: "Sign in / Sign up with Apple")
+                socialLoginBtn(image: AppImages.appleLogo.rawValue, title: "Sign in / Sign up with Apple"){
+                    apple.signIn()
+                }
                 
-                socialLoginBtn(image: AppImages.googlelogo.rawValue, title: "Sign in / Sign up with Google")
+                socialLoginBtn(image: AppImages.googlelogo.rawValue, title: "Sign in / Sign up with Google"){
+                    
+                    google.signIn()
+                }
             }
             
             HStack(){
@@ -116,37 +125,35 @@ extension SocialLoginView {
                     .frame(height: 1)
                     .foregroundColor(.newLineColor)
             }
-          
+            
             
         }
-            
+    }
+    
                
             
         
     }
     
-    func socialLoginBtn(image: String, title: String) -> some View {
-        
-        RoundedRectangle(cornerRadius:5)
-            .frame(height: 50)
-            .foregroundColor(.white)
-            .overlay(
-                RoundedRectangle(cornerRadius: 10)
-                    .stroke(.gray,lineWidth: 1.5)
-                    .overlay(
-                        HStack{
-                            Image(image)
-                            Text(title)
-                        }
-                    )
-                    .foregroundColor(.black)
-                    .font(.custom(DMSans.regular.rawValue, size: 16))
-                    
-                
-                
-            )
 
-    }
+    func socialLoginBtn(image: String, title: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            RoundedRectangle(cornerRadius: 5)
+                .frame(height: 50)
+                .foregroundColor(.white)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.gray, lineWidth: 1.5)
+                        .overlay(
+                            HStack {
+                                Image(image)
+                                Text(title)
+                            }
+                        )
+                        .foregroundColor(.black)
+                        .font(.custom(DMSans.regular.rawValue, size: 16))
+                )
+        }
 }
 
 
@@ -154,11 +161,7 @@ struct SplashScreenView_Previews: PreviewProvider {
     static var previews: some View {
         
         SocialLoginView()
-                   .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro Max"))
-                   .previewDisplayName("iPhone 14 Pro Max")
-        
-        SocialLoginView()
-                   .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
-                   .previewDisplayName("iPhone SE (3rd generation)")
+
     }
 }
+

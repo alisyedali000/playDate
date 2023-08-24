@@ -194,12 +194,20 @@ extension SwipeCard{
 
 
 
+//struct SwipeCard_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SwipeCard(user: userModel())
+//
+//    }
+//}
+
 struct SwipeCard_Previews: PreviewProvider {
     static var previews: some View {
         SwipeCard(user: userModel())
-
+            .environmentObject(HomeViewModel())
     }
 }
 
-//import SwiftUI
+
+
 

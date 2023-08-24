@@ -24,6 +24,7 @@ extension SplashView{
                     .hideNavigationBar
             } label: {
                CustomButtonView(text:"Get Started")
+                    .padding()
                 
             }
            
@@ -62,11 +63,6 @@ struct SplashView_Previews: PreviewProvider {
     static var previews: some View {
     
         SplashView()
-                   .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro Max"))
-                   .previewDisplayName("iPhone 14 Pro Max")
-        
-        SplashView()
-                   .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
-                   .previewDisplayName("iPhone SE (3rd generation)")
+   
     }
 }

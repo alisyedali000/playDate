@@ -20,6 +20,7 @@ struct PlayDate: App {
     
     
     @StateObject var google = GoogleAuthentication()
+    @StateObject var apple = AppleSignIn()
     
     init() {
         setupAuthentication()
@@ -32,6 +33,7 @@ struct PlayDate: App {
                 ContentView()
             }
             .environmentObject(google)
+            .environmentObject(apple)
         }
     }
     

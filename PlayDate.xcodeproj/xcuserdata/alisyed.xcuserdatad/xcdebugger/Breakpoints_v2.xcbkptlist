@@ -18,6 +18,38 @@
             endingLineNumber = "85"
             landmarkName = "loadView()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "32A700BA-E184-4467-885A-BDD550E1F766 - feb2586f62d14a76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.clipShape&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.Shape&gt;(_: &#x3c4;_1_0, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;PlayDate.CustomNavButton&gt;, SwiftUI.Spacer, SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.clipShape&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.Shape&gt;(_: &#x3c4;_1_0, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0&gt;, &lt;&lt;opaque return type of PlayDate.EditPetDetails.petTextFields() -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of PlayDate.EditPetDetails.petattributes() -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of PlayDate.EditPetDetails.getvaccinated() -&gt; some&gt;&gt;.0, PlayDate.AppButton)&gt;&gt;, SwiftUI.Spacer)&gt; in PlayDate.EditPetDetails.loadView() -&gt; some"
+                  moduleName = "PlayDate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Documents/playDate/PlayDate/Views/Pet%20Details/EditPetDetails.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "32A700BA-E184-4467-885A-BDD550E1F766 - feb2586f62d14a76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.clipShape&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.Shape&gt;(_: &#x3c4;_1_0, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;PlayDate.CustomNavButton&gt;, SwiftUI.Spacer, SwiftUI.Button&lt;&lt;&lt;opaque return type of SwiftUI.View.clipShape&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.Shape&gt;(_: &#x3c4;_1_0, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0&gt;, &lt;&lt;opaque return type of PlayDate.EditPetDetails.petTextFields() -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of PlayDate.EditPetDetails.petattributes() -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of PlayDate.EditPetDetails.getvaccinated() -&gt; some&gt;&gt;.0, PlayDate.AppButton)&gt;&gt;, SwiftUI.Spacer)&gt; in PlayDate.EditPetDetails.loadView() -&gt; some"
+                  moduleName = "PlayDate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Documents/playDate/PlayDate/Views/Pet%20Details/EditPetDetails.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "476">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -34,6 +66,245 @@
             endingLineNumber = "62"
             landmarkName = "signupAPI()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A82CD7A-1836-493F-BE21-49DFEAF12619"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayDate/Manager/NetworkManager/SwiftUIView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "061BB700-F95A-4719-9693-0F03DED063B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayDate/Manager/NetworkManager/SwiftUIView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DB4FC43-DD38-49FB-BE5D-F86B893403F8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayDate/Views/Home/SwipeCard.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "loadView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C62DA8F6-B135-47CE-9A5E-A07D4B565739"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayDate/Views/Home/SwipeCard.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "SwipeCard"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "747B3CF6-7A62-4245-BBA4-3E5C004EFDB5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayDate/Views/Home/SwipeCard.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "SwipeCard"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1ACAA3A-2D9D-4199-A3DE-2635F4BC0766"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayDate/Manager/NetworkManager/GoogleSignIn.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "SignInState"
+            landmarkType = "13">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DE4C177-51EC-4C5A-A3A3-6F7CBA3BDD44"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayDate/Views/Login/LoginScreenView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "loadView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E351CF6-74BA-4161-ACD8-FE785F9B1D32"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayDate/Views/Profile/ProfileView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "profileMenu()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3E351CF6-74BA-4161-ACD8-FE785F9B1D32 - b421f5ec76abf706"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #10 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;PlayDate.CustomProfileLog, &lt;&lt;opaque return type of SwiftUI.View.hideNavigationBar : some&gt;&gt;.0&gt;, PlayDate.ProfileToggle, PlayDate.ProfileToggle, SwiftUI.NavigationLink&lt;PlayDate.CustomProfileLog, &lt;&lt;opaque return type of SwiftUI.View.hideNavigationBar : some&gt;&gt;.0&gt;, SwiftUI.NavigationLink&lt;PlayDate.CustomProfileLog, &lt;&lt;opaque return type of SwiftUI.View.hideNavigationBar : some&gt;&gt;.0&gt;, &lt;&lt;opaque return type of SwiftUI.View.alert(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, content: () -&gt; SwiftUI.Alert) -&gt; some&gt;&gt;.0, SwiftUI.Button&lt;PlayDate.CustomProfileLog&gt;)&gt; in PlayDate.ProfileView.profileMenu() -&gt; some"
+                  moduleName = "PlayDate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Documents/playDate/PlayDate/Views/Profile/ProfileView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "3E351CF6-74BA-4161-ACD8-FE785F9B1D32 - b421f5ec76abf761"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #10 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;PlayDate.CustomProfileLog, &lt;&lt;opaque return type of SwiftUI.View.hideNavigationBar : some&gt;&gt;.0&gt;, PlayDate.ProfileToggle, PlayDate.ProfileToggle, SwiftUI.NavigationLink&lt;PlayDate.CustomProfileLog, &lt;&lt;opaque return type of SwiftUI.View.hideNavigationBar : some&gt;&gt;.0&gt;, SwiftUI.NavigationLink&lt;PlayDate.CustomProfileLog, &lt;&lt;opaque return type of SwiftUI.View.hideNavigationBar : some&gt;&gt;.0&gt;, &lt;&lt;opaque return type of SwiftUI.View.alert(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, content: () -&gt; SwiftUI.Alert) -&gt; some&gt;&gt;.0, SwiftUI.Button&lt;PlayDate.CustomProfileLog&gt;)&gt; in PlayDate.ProfileView.profileMenu() -&gt; some"
+                  moduleName = "PlayDate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Documents/playDate/PlayDate/Views/Profile/ProfileView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32D6CB39-127C-42D3-9A3D-5D0A83B44C94"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayDate/AppMain/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "combinedAuthenticationState"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB977A99-8F29-4F67-9AF5-DF7F9CAAC26B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlayDate/Views/Login/LoginScreenView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "LoginScreenView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "AB977A99-8F29-4F67-9AF5-DF7F9CAAC26B - 539bc3ccb6c701fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlayDate.LoginScreenView.apple.getter : PlayDate.AppleSignIn"
+                  moduleName = "PlayDate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Documents/playDate/PlayDate/Views/Login/LoginScreenView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "AB977A99-8F29-4F67-9AF5-DF7F9CAAC26B - d81fb80b1742f973"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlayDate.LoginScreenView.$apple.getter : SwiftUI.EnvironmentObject&lt;PlayDate.AppleSignIn&gt;.Wrapper"
+                  moduleName = "PlayDate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Documents/playDate/PlayDate/Views/Login/LoginScreenView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "AB977A99-8F29-4F67-9AF5-DF7F9CAAC26B - f8808ddbf8f2ba18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlayDate.LoginScreenView.init() -&gt; PlayDate.LoginScreenView"
+                  moduleName = "PlayDate"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alisyed/Documents/playDate/PlayDate/Views/Login/LoginScreenView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

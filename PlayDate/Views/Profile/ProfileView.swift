@@ -13,6 +13,7 @@ struct ProfileView: View {
     @State private var moveToAddPets = false
     @Environment (\.dismiss) var dismiss
     @EnvironmentObject var google : GoogleAuthentication
+    @EnvironmentObject var apple : AppleSignIn
     @StateObject var profileVM = AddPetViewModel()
     @StateObject var deleteVM = EditPetViewModel()
     @State private var showalert = false
@@ -123,15 +124,13 @@ extension ProfileView {
                 DispatchQueue.main.async {
                     UserDefaultManager.shared.removeUser()
                     google.signOut()
+                    apple.signOut()
                 }
                 
             } label: {
                 CustomProfileLog(image: AppImages.logout.rawValue, Titletext:"Log out" , Description: "Further secure your account for safety", color: .newLogout)
             }
 
-            
-            
-            
         }.padding(.horizontal,20)
         
     }
@@ -139,8 +138,7 @@ extension ProfileView {
     func profile()-> some View{
         HStack{
             Image(AppImages.profile.rawValue)
-        
-            
+   
         }
     }
     
@@ -236,9 +234,6 @@ struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
         
-        ProfileView()
-        
-            .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
-            .previewDisplayName("iPhone SE (3rd generation)")
+ 
     }
 }
